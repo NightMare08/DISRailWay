@@ -1,0 +1,1006 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A9A00C81FB14E3600707B45 /* DISRailWayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9A00C71FB14E3600707B45 /* DISRailWayTests.swift */; };
+		4A9A00D31FB14E3600707B45 /* DISRailWayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9A00D21FB14E3600707B45 /* DISRailWayUITests.swift */; };
+		4A9A01AC1FB14EC000707B45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9A016C1FB14EC000707B45 /* AppDelegate.swift */; };
+		4A9A01AD1FB14EC000707B45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A9A016D1FB14EC000707B45 /* Assets.xcassets */; };
+		4A9A01AE1FB14EC000707B45 /* DISBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9A01711FB14EC000707B45 /* DISBaseController.swift */; };
+		4A9A01AF1FB14EC000707B45 /* DISEntryTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9A01721FB14EC000707B45 /* DISEntryTabbarController.swift */; };
+		4A9A01B01FB14EC000707B45 /* DISKensaMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9A01731FB14EC000707B45 /* DISKensaMainViewController.swift */; };
+		4A9A01B11FB14EC000707B45 /* DISLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9A01741FB14EC000707B45 /* DISLoginController.swift */; };
+		4A9A01B21FB14EC000707B45 /* DISOccupationInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9A01751FB14EC000707B45 /* DISOccupationInfoViewController.swift */; };
+		4A9A01B31FB14EC000707B45 /* DISShogenMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9A01761FB14EC000707B45 /* DISShogenMainViewController.swift */; };
+		4A9A01B41FB14EC000707B45 /* DISCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9A01781FB14EC000707B45 /* DISCommon.swift */; };
+		4A9A01B51FB14EC000707B45 /* DISOccupationInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9A017A1FB14EC000707B45 /* DISOccupationInfoModel.swift */; };
+		4A9A01B61FB14EC000707B45 /* DISCheckBoxButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9A017C1FB14EC000707B45 /* DISCheckBoxButton.swift */; };
+		4A9A01B71FB14EC000707B45 /* DISKensaMainViewControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9A017D1FB14EC000707B45 /* DISKensaMainViewControllerCell.swift */; };
+		4A9A01B81FB14EC000707B45 /* DISOccupationInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9A017E1FB14EC000707B45 /* DISOccupationInfoCell.swift */; };
+		4A9A01B91FB14EC000707B45 /* DISOccupationInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A9A017F1FB14EC000707B45 /* DISOccupationInfoCell.xib */; };
+		4A9A01BA1FB14EC000707B45 /* DISOccupationPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9A01801FB14EC000707B45 /* DISOccupationPickerView.swift */; };
+		4A9A01C31FB14EC000707B45 /* DISChichuusoudenMainController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A9A019B1FB14EC000707B45 /* DISChichuusoudenMainController.storyboard */; };
+		4A9A01C41FB14EC000707B45 /* DISDenshasenMainController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A9A019C1FB14EC000707B45 /* DISDenshasenMainController.storyboard */; };
+		4A9A01C51FB14EC000707B45 /* DISDentoudenryokuMainController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A9A019D1FB14EC000707B45 /* DISDentoudenryokuMainController.storyboard */; };
+		4A9A01C61FB14EC000707B45 /* DISHendenKyuuMainController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A9A019E1FB14EC000707B45 /* DISHendenKyuuMainController.storyboard */; };
+		4A9A01C71FB14EC000707B45 /* DISHendenMainController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A9A019F1FB14EC000707B45 /* DISHendenMainController.storyboard */; };
+		4A9A01C81FB14EC000707B45 /* DISKakuusoudenMainController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A9A01A01FB14EC000707B45 /* DISKakuusoudenMainController.storyboard */; };
+		4A9A01C91FB14EC000707B45 /* DISKaryokuHatsudenMainController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A9A01A11FB14EC000707B45 /* DISKaryokuHatsudenMainController.storyboard */; };
+		4A9A01CA1FB14EC000707B45 /* DISSuiryokuhatsudenMainController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A9A01A21FB14EC000707B45 /* DISSuiryokuhatsudenMainController.storyboard */; };
+		4A9A01CB1FB14EC000707B45 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A9A01A31FB14EC000707B45 /* Login.storyboard */; };
+		4A9A01CC1FB14EC000707B45 /* OccupationInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A9A01A41FB14EC000707B45 /* OccupationInfo.storyboard */; };
+		4A9A01CD1FB14EC000707B45 /* OccupationMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A9A01A51FB14EC000707B45 /* OccupationMain.storyboard */; };
+		4A9A01CE1FB14EC000707B45 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9A01A81FB14EC000707B45 /* Date+Extension.swift */; };
+		4A9A01CF1FB14EC000707B45 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9A01A91FB14EC000707B45 /* String+Extension.swift */; };
+		4A9A01D01FB14EC000707B45 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9A01AA1FB14EC000707B45 /* UIColor+Extension.swift */; };
+		4A9A01D11FB14EC000707B45 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A9A01AB1FB14EC000707B45 /* Info.plist */; };
+		4A9A01FA1FB153CF00707B45 /* DISChichuusoudenMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9A01D61FB153CE00707B45 /* DISChichuusoudenMainController.swift */; };
+		4A9A01FB1FB153CF00707B45 /* DISDentoudenryokuMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9A01D91FB153CE00707B45 /* DISDentoudenryokuMainController.swift */; };
+		4A9A01FC1FB153CF00707B45 /* DISDenshasenMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9A01DE1FB153CE00707B45 /* DISDenshasenMainController.swift */; };
+		4A9A01FD1FB153CF00707B45 /* DISKaryokuHatsudenMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9A01E31FB153CE00707B45 /* DISKaryokuHatsudenMainController.swift */; };
+		4A9A01FE1FB153CF00707B45 /* DISKakuusoudenMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9A01E81FB153CF00707B45 /* DISKakuusoudenMainController.swift */; };
+		4A9A01FF1FB153CF00707B45 /* DISHendenMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9A01ED1FB153CF00707B45 /* DISHendenMainController.swift */; };
+		4A9A02001FB153CF00707B45 /* DISHendenKyuuMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9A01F21FB153CF00707B45 /* DISHendenKyuuMainController.swift */; };
+		4A9A02011FB153CF00707B45 /* DISSuiryokuhatsudenMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9A01F71FB153CF00707B45 /* DISSuiryokuhatsudenMainController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4A9A00C41FB14E3600707B45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A9A00A71FB14E3600707B45 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A9A00AE1FB14E3600707B45;
+			remoteInfo = DISRailWay;
+		};
+		4A9A00CF1FB14E3600707B45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A9A00A71FB14E3600707B45 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A9A00AE1FB14E3600707B45;
+			remoteInfo = DISRailWay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4A9A00AF1FB14E3600707B45 /* DISRailWay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DISRailWay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A9A00C31FB14E3600707B45 /* DISRailWayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DISRailWayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A9A00C71FB14E3600707B45 /* DISRailWayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DISRailWayTests.swift; sourceTree = "<group>"; };
+		4A9A00C91FB14E3600707B45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A9A00CE1FB14E3600707B45 /* DISRailWayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DISRailWayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A9A00D21FB14E3600707B45 /* DISRailWayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DISRailWayUITests.swift; sourceTree = "<group>"; };
+		4A9A00D41FB14E3600707B45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A9A016C1FB14EC000707B45 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4A9A016D1FB14EC000707B45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4A9A01711FB14EC000707B45 /* DISBaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DISBaseController.swift; sourceTree = "<group>"; };
+		4A9A01721FB14EC000707B45 /* DISEntryTabbarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DISEntryTabbarController.swift; sourceTree = "<group>"; };
+		4A9A01731FB14EC000707B45 /* DISKensaMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DISKensaMainViewController.swift; sourceTree = "<group>"; };
+		4A9A01741FB14EC000707B45 /* DISLoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DISLoginController.swift; sourceTree = "<group>"; };
+		4A9A01751FB14EC000707B45 /* DISOccupationInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DISOccupationInfoViewController.swift; sourceTree = "<group>"; };
+		4A9A01761FB14EC000707B45 /* DISShogenMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DISShogenMainViewController.swift; sourceTree = "<group>"; };
+		4A9A01781FB14EC000707B45 /* DISCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DISCommon.swift; sourceTree = "<group>"; };
+		4A9A017A1FB14EC000707B45 /* DISOccupationInfoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DISOccupationInfoModel.swift; sourceTree = "<group>"; };
+		4A9A017C1FB14EC000707B45 /* DISCheckBoxButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DISCheckBoxButton.swift; sourceTree = "<group>"; };
+		4A9A017D1FB14EC000707B45 /* DISKensaMainViewControllerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DISKensaMainViewControllerCell.swift; sourceTree = "<group>"; };
+		4A9A017E1FB14EC000707B45 /* DISOccupationInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DISOccupationInfoCell.swift; sourceTree = "<group>"; };
+		4A9A017F1FB14EC000707B45 /* DISOccupationInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DISOccupationInfoCell.xib; sourceTree = "<group>"; };
+		4A9A01801FB14EC000707B45 /* DISOccupationPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DISOccupationPickerView.swift; sourceTree = "<group>"; };
+		4A9A019B1FB14EC000707B45 /* DISChichuusoudenMainController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DISChichuusoudenMainController.storyboard; sourceTree = "<group>"; };
+		4A9A019C1FB14EC000707B45 /* DISDenshasenMainController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DISDenshasenMainController.storyboard; sourceTree = "<group>"; };
+		4A9A019D1FB14EC000707B45 /* DISDentoudenryokuMainController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DISDentoudenryokuMainController.storyboard; sourceTree = "<group>"; };
+		4A9A019E1FB14EC000707B45 /* DISHendenKyuuMainController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DISHendenKyuuMainController.storyboard; sourceTree = "<group>"; };
+		4A9A019F1FB14EC000707B45 /* DISHendenMainController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DISHendenMainController.storyboard; sourceTree = "<group>"; };
+		4A9A01A01FB14EC000707B45 /* DISKakuusoudenMainController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DISKakuusoudenMainController.storyboard; sourceTree = "<group>"; };
+		4A9A01A11FB14EC000707B45 /* DISKaryokuHatsudenMainController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DISKaryokuHatsudenMainController.storyboard; sourceTree = "<group>"; };
+		4A9A01A21FB14EC000707B45 /* DISSuiryokuhatsudenMainController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DISSuiryokuhatsudenMainController.storyboard; sourceTree = "<group>"; };
+		4A9A01A31FB14EC000707B45 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		4A9A01A41FB14EC000707B45 /* OccupationInfo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OccupationInfo.storyboard; sourceTree = "<group>"; };
+		4A9A01A51FB14EC000707B45 /* OccupationMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OccupationMain.storyboard; sourceTree = "<group>"; };
+		4A9A01A81FB14EC000707B45 /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		4A9A01A91FB14EC000707B45 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		4A9A01AA1FB14EC000707B45 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		4A9A01AB1FB14EC000707B45 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A9A01D61FB153CE00707B45 /* DISChichuusoudenMainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DISChichuusoudenMainController.swift; sourceTree = "<group>"; };
+		4A9A01D91FB153CE00707B45 /* DISDentoudenryokuMainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DISDentoudenryokuMainController.swift; sourceTree = "<group>"; };
+		4A9A01DE1FB153CE00707B45 /* DISDenshasenMainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DISDenshasenMainController.swift; sourceTree = "<group>"; };
+		4A9A01E31FB153CE00707B45 /* DISKaryokuHatsudenMainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DISKaryokuHatsudenMainController.swift; sourceTree = "<group>"; };
+		4A9A01E81FB153CF00707B45 /* DISKakuusoudenMainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DISKakuusoudenMainController.swift; sourceTree = "<group>"; };
+		4A9A01ED1FB153CF00707B45 /* DISHendenMainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DISHendenMainController.swift; sourceTree = "<group>"; };
+		4A9A01F21FB153CF00707B45 /* DISHendenKyuuMainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DISHendenKyuuMainController.swift; sourceTree = "<group>"; };
+		4A9A01F71FB153CF00707B45 /* DISSuiryokuhatsudenMainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DISSuiryokuhatsudenMainController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4A9A00AC1FB14E3600707B45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A9A00C01FB14E3600707B45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A9A00CB1FB14E3600707B45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4A9A00A61FB14E3600707B45 = {
+			isa = PBXGroup;
+			children = (
+				4A9A016B1FB14EC000707B45 /* DISRailWay */,
+				4A9A00C61FB14E3600707B45 /* DISRailWayTests */,
+				4A9A00D11FB14E3600707B45 /* DISRailWayUITests */,
+				4A9A00B01FB14E3600707B45 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4A9A00B01FB14E3600707B45 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4A9A00AF1FB14E3600707B45 /* DISRailWay.app */,
+				4A9A00C31FB14E3600707B45 /* DISRailWayTests.xctest */,
+				4A9A00CE1FB14E3600707B45 /* DISRailWayUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4A9A00C61FB14E3600707B45 /* DISRailWayTests */ = {
+			isa = PBXGroup;
+			children = (
+				4A9A00C71FB14E3600707B45 /* DISRailWayTests.swift */,
+				4A9A00C91FB14E3600707B45 /* Info.plist */,
+			);
+			path = DISRailWayTests;
+			sourceTree = "<group>";
+		};
+		4A9A00D11FB14E3600707B45 /* DISRailWayUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4A9A00D21FB14E3600707B45 /* DISRailWayUITests.swift */,
+				4A9A00D41FB14E3600707B45 /* Info.plist */,
+			);
+			path = DISRailWayUITests;
+			sourceTree = "<group>";
+		};
+		4A9A016B1FB14EC000707B45 /* DISRailWay */ = {
+			isa = PBXGroup;
+			children = (
+				4A9A016C1FB14EC000707B45 /* AppDelegate.swift */,
+				4A9A016D1FB14EC000707B45 /* Assets.xcassets */,
+				4A9A016E1FB14EC000707B45 /* Classes */,
+				4A9A01AB1FB14EC000707B45 /* Info.plist */,
+			);
+			path = DISRailWay;
+			sourceTree = "<group>";
+		};
+		4A9A016E1FB14EC000707B45 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4A9A016F1FB14EC000707B45 /* CommonModules */,
+				4A9A01811FB14EC000707B45 /* Kensa */,
+				4A9A019A1FB14EC000707B45 /* Storyboards */,
+				4A9A01A61FB14EC000707B45 /* Tools */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		4A9A016F1FB14EC000707B45 /* CommonModules */ = {
+			isa = PBXGroup;
+			children = (
+				4A9A01701FB14EC000707B45 /* Controllers */,
+				4A9A01771FB14EC000707B45 /* Global */,
+				4A9A01791FB14EC000707B45 /* Models */,
+				4A9A017B1FB14EC000707B45 /* Views */,
+			);
+			path = CommonModules;
+			sourceTree = "<group>";
+		};
+		4A9A01701FB14EC000707B45 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4A9A01711FB14EC000707B45 /* DISBaseController.swift */,
+				4A9A01721FB14EC000707B45 /* DISEntryTabbarController.swift */,
+				4A9A01731FB14EC000707B45 /* DISKensaMainViewController.swift */,
+				4A9A01741FB14EC000707B45 /* DISLoginController.swift */,
+				4A9A01751FB14EC000707B45 /* DISOccupationInfoViewController.swift */,
+				4A9A01761FB14EC000707B45 /* DISShogenMainViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4A9A01771FB14EC000707B45 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				4A9A01781FB14EC000707B45 /* DISCommon.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		4A9A01791FB14EC000707B45 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4A9A017A1FB14EC000707B45 /* DISOccupationInfoModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4A9A017B1FB14EC000707B45 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4A9A017C1FB14EC000707B45 /* DISCheckBoxButton.swift */,
+				4A9A017D1FB14EC000707B45 /* DISKensaMainViewControllerCell.swift */,
+				4A9A017E1FB14EC000707B45 /* DISOccupationInfoCell.swift */,
+				4A9A017F1FB14EC000707B45 /* DISOccupationInfoCell.xib */,
+				4A9A01801FB14EC000707B45 /* DISOccupationPickerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4A9A01811FB14EC000707B45 /* Kensa */ = {
+			isa = PBXGroup;
+			children = (
+				4A9A01D41FB153CE00707B45 /* Chichusouden */,
+				4A9A01DC1FB153CE00707B45 /* Denshasen */,
+				4A9A01D71FB153CE00707B45 /* DentouDenryoku */,
+				4A9A01EB1FB153CF00707B45 /* Henden */,
+				4A9A01F01FB153CF00707B45 /* Hendenkyuu */,
+				4A9A01E61FB153CF00707B45 /* Kakuusouden */,
+				4A9A01E11FB153CE00707B45 /* Karyokuhatsuden */,
+				4A9A01F51FB153CF00707B45 /* Suiryokuhatsuden */,
+			);
+			path = Kensa;
+			sourceTree = "<group>";
+		};
+		4A9A019A1FB14EC000707B45 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				4A9A019B1FB14EC000707B45 /* DISChichuusoudenMainController.storyboard */,
+				4A9A019C1FB14EC000707B45 /* DISDenshasenMainController.storyboard */,
+				4A9A019D1FB14EC000707B45 /* DISDentoudenryokuMainController.storyboard */,
+				4A9A019E1FB14EC000707B45 /* DISHendenKyuuMainController.storyboard */,
+				4A9A019F1FB14EC000707B45 /* DISHendenMainController.storyboard */,
+				4A9A01A01FB14EC000707B45 /* DISKakuusoudenMainController.storyboard */,
+				4A9A01A11FB14EC000707B45 /* DISKaryokuHatsudenMainController.storyboard */,
+				4A9A01A21FB14EC000707B45 /* DISSuiryokuhatsudenMainController.storyboard */,
+				4A9A01A31FB14EC000707B45 /* Login.storyboard */,
+				4A9A01A41FB14EC000707B45 /* OccupationInfo.storyboard */,
+				4A9A01A51FB14EC000707B45 /* OccupationMain.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		4A9A01A61FB14EC000707B45 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				4A9A01A71FB14EC000707B45 /* Extensions */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		4A9A01A71FB14EC000707B45 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4A9A01A81FB14EC000707B45 /* Date+Extension.swift */,
+				4A9A01A91FB14EC000707B45 /* String+Extension.swift */,
+				4A9A01AA1FB14EC000707B45 /* UIColor+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4A9A01D41FB153CE00707B45 /* Chichusouden */ = {
+			isa = PBXGroup;
+			children = (
+				4A9A02031FB153E700707B45 /* Models */,
+				4A9A02021FB153E700707B45 /* Views */,
+				4A9A01D51FB153CE00707B45 /* Controllers */,
+			);
+			path = Chichusouden;
+			sourceTree = "<group>";
+		};
+		4A9A01D51FB153CE00707B45 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4A9A01D61FB153CE00707B45 /* DISChichuusoudenMainController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4A9A01D71FB153CE00707B45 /* DentouDenryoku */ = {
+			isa = PBXGroup;
+			children = (
+				4A9A01D81FB153CE00707B45 /* Controllers */,
+				4A9A01DA1FB153CE00707B45 /* Models */,
+				4A9A01DB1FB153CE00707B45 /* Views */,
+			);
+			path = DentouDenryoku;
+			sourceTree = "<group>";
+		};
+		4A9A01D81FB153CE00707B45 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4A9A01D91FB153CE00707B45 /* DISDentoudenryokuMainController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4A9A01DA1FB153CE00707B45 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4A9A01DB1FB153CE00707B45 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4A9A01DC1FB153CE00707B45 /* Denshasen */ = {
+			isa = PBXGroup;
+			children = (
+				4A9A01DD1FB153CE00707B45 /* Controllers */,
+				4A9A01DF1FB153CE00707B45 /* Models */,
+				4A9A01E01FB153CE00707B45 /* Views */,
+			);
+			path = Denshasen;
+			sourceTree = "<group>";
+		};
+		4A9A01DD1FB153CE00707B45 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4A9A01DE1FB153CE00707B45 /* DISDenshasenMainController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4A9A01DF1FB153CE00707B45 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4A9A01E01FB153CE00707B45 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4A9A01E11FB153CE00707B45 /* Karyokuhatsuden */ = {
+			isa = PBXGroup;
+			children = (
+				4A9A01E21FB153CE00707B45 /* Controllers */,
+				4A9A01E41FB153CE00707B45 /* Models */,
+				4A9A01E51FB153CE00707B45 /* Views */,
+			);
+			path = Karyokuhatsuden;
+			sourceTree = "<group>";
+		};
+		4A9A01E21FB153CE00707B45 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4A9A01E31FB153CE00707B45 /* DISKaryokuHatsudenMainController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4A9A01E41FB153CE00707B45 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4A9A01E51FB153CE00707B45 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4A9A01E61FB153CF00707B45 /* Kakuusouden */ = {
+			isa = PBXGroup;
+			children = (
+				4A9A01E71FB153CF00707B45 /* Controllers */,
+				4A9A01E91FB153CF00707B45 /* Models */,
+				4A9A01EA1FB153CF00707B45 /* Views */,
+			);
+			path = Kakuusouden;
+			sourceTree = "<group>";
+		};
+		4A9A01E71FB153CF00707B45 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4A9A01E81FB153CF00707B45 /* DISKakuusoudenMainController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4A9A01E91FB153CF00707B45 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4A9A01EA1FB153CF00707B45 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4A9A01EB1FB153CF00707B45 /* Henden */ = {
+			isa = PBXGroup;
+			children = (
+				4A9A01EC1FB153CF00707B45 /* Controllers */,
+				4A9A01EE1FB153CF00707B45 /* Models */,
+				4A9A01EF1FB153CF00707B45 /* Views */,
+			);
+			path = Henden;
+			sourceTree = "<group>";
+		};
+		4A9A01EC1FB153CF00707B45 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4A9A01ED1FB153CF00707B45 /* DISHendenMainController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4A9A01EE1FB153CF00707B45 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4A9A01EF1FB153CF00707B45 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4A9A01F01FB153CF00707B45 /* Hendenkyuu */ = {
+			isa = PBXGroup;
+			children = (
+				4A9A01F11FB153CF00707B45 /* Controllers */,
+				4A9A01F31FB153CF00707B45 /* Models */,
+				4A9A01F41FB153CF00707B45 /* Views */,
+			);
+			path = Hendenkyuu;
+			sourceTree = "<group>";
+		};
+		4A9A01F11FB153CF00707B45 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4A9A01F21FB153CF00707B45 /* DISHendenKyuuMainController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4A9A01F31FB153CF00707B45 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4A9A01F41FB153CF00707B45 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4A9A01F51FB153CF00707B45 /* Suiryokuhatsuden */ = {
+			isa = PBXGroup;
+			children = (
+				4A9A01F61FB153CF00707B45 /* Controllers */,
+				4A9A01F81FB153CF00707B45 /* Models */,
+				4A9A01F91FB153CF00707B45 /* Views */,
+			);
+			path = Suiryokuhatsuden;
+			sourceTree = "<group>";
+		};
+		4A9A01F61FB153CF00707B45 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4A9A01F71FB153CF00707B45 /* DISSuiryokuhatsudenMainController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4A9A01F81FB153CF00707B45 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4A9A01F91FB153CF00707B45 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4A9A02021FB153E700707B45 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4A9A02031FB153E700707B45 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4A9A00AE1FB14E3600707B45 /* DISRailWay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A9A00D71FB14E3600707B45 /* Build configuration list for PBXNativeTarget "DISRailWay" */;
+			buildPhases = (
+				4A9A00AB1FB14E3600707B45 /* Sources */,
+				4A9A00AC1FB14E3600707B45 /* Frameworks */,
+				4A9A00AD1FB14E3600707B45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DISRailWay;
+			productName = DISRailWay;
+			productReference = 4A9A00AF1FB14E3600707B45 /* DISRailWay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4A9A00C21FB14E3600707B45 /* DISRailWayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A9A00DA1FB14E3600707B45 /* Build configuration list for PBXNativeTarget "DISRailWayTests" */;
+			buildPhases = (
+				4A9A00BF1FB14E3600707B45 /* Sources */,
+				4A9A00C01FB14E3600707B45 /* Frameworks */,
+				4A9A00C11FB14E3600707B45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A9A00C51FB14E3600707B45 /* PBXTargetDependency */,
+			);
+			name = DISRailWayTests;
+			productName = DISRailWayTests;
+			productReference = 4A9A00C31FB14E3600707B45 /* DISRailWayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4A9A00CD1FB14E3600707B45 /* DISRailWayUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A9A00DD1FB14E3600707B45 /* Build configuration list for PBXNativeTarget "DISRailWayUITests" */;
+			buildPhases = (
+				4A9A00CA1FB14E3600707B45 /* Sources */,
+				4A9A00CB1FB14E3600707B45 /* Frameworks */,
+				4A9A00CC1FB14E3600707B45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A9A00D01FB14E3600707B45 /* PBXTargetDependency */,
+			);
+			name = DISRailWayUITests;
+			productName = DISRailWayUITests;
+			productReference = 4A9A00CE1FB14E3600707B45 /* DISRailWayUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4A9A00A71FB14E3600707B45 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = jp.co.disol;
+				TargetAttributes = {
+					4A9A00AE1FB14E3600707B45 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+					4A9A00C21FB14E3600707B45 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4A9A00AE1FB14E3600707B45;
+					};
+					4A9A00CD1FB14E3600707B45 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4A9A00AE1FB14E3600707B45;
+					};
+				};
+			};
+			buildConfigurationList = 4A9A00AA1FB14E3600707B45 /* Build configuration list for PBXProject "DISRailWay" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4A9A00A61FB14E3600707B45;
+			productRefGroup = 4A9A00B01FB14E3600707B45 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4A9A00AE1FB14E3600707B45 /* DISRailWay */,
+				4A9A00C21FB14E3600707B45 /* DISRailWayTests */,
+				4A9A00CD1FB14E3600707B45 /* DISRailWayUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4A9A00AD1FB14E3600707B45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A9A01C51FB14EC000707B45 /* DISDentoudenryokuMainController.storyboard in Resources */,
+				4A9A01AD1FB14EC000707B45 /* Assets.xcassets in Resources */,
+				4A9A01C71FB14EC000707B45 /* DISHendenMainController.storyboard in Resources */,
+				4A9A01C61FB14EC000707B45 /* DISHendenKyuuMainController.storyboard in Resources */,
+				4A9A01CD1FB14EC000707B45 /* OccupationMain.storyboard in Resources */,
+				4A9A01C31FB14EC000707B45 /* DISChichuusoudenMainController.storyboard in Resources */,
+				4A9A01D11FB14EC000707B45 /* Info.plist in Resources */,
+				4A9A01CC1FB14EC000707B45 /* OccupationInfo.storyboard in Resources */,
+				4A9A01C41FB14EC000707B45 /* DISDenshasenMainController.storyboard in Resources */,
+				4A9A01C81FB14EC000707B45 /* DISKakuusoudenMainController.storyboard in Resources */,
+				4A9A01CA1FB14EC000707B45 /* DISSuiryokuhatsudenMainController.storyboard in Resources */,
+				4A9A01C91FB14EC000707B45 /* DISKaryokuHatsudenMainController.storyboard in Resources */,
+				4A9A01B91FB14EC000707B45 /* DISOccupationInfoCell.xib in Resources */,
+				4A9A01CB1FB14EC000707B45 /* Login.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A9A00C11FB14E3600707B45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A9A00CC1FB14E3600707B45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4A9A00AB1FB14E3600707B45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A9A01B31FB14EC000707B45 /* DISShogenMainViewController.swift in Sources */,
+				4A9A01CE1FB14EC000707B45 /* Date+Extension.swift in Sources */,
+				4A9A01FE1FB153CF00707B45 /* DISKakuusoudenMainController.swift in Sources */,
+				4A9A01FF1FB153CF00707B45 /* DISHendenMainController.swift in Sources */,
+				4A9A01B51FB14EC000707B45 /* DISOccupationInfoModel.swift in Sources */,
+				4A9A01FC1FB153CF00707B45 /* DISDenshasenMainController.swift in Sources */,
+				4A9A01B21FB14EC000707B45 /* DISOccupationInfoViewController.swift in Sources */,
+				4A9A01FA1FB153CF00707B45 /* DISChichuusoudenMainController.swift in Sources */,
+				4A9A01B61FB14EC000707B45 /* DISCheckBoxButton.swift in Sources */,
+				4A9A01AF1FB14EC000707B45 /* DISEntryTabbarController.swift in Sources */,
+				4A9A02001FB153CF00707B45 /* DISHendenKyuuMainController.swift in Sources */,
+				4A9A01B41FB14EC000707B45 /* DISCommon.swift in Sources */,
+				4A9A01AC1FB14EC000707B45 /* AppDelegate.swift in Sources */,
+				4A9A01BA1FB14EC000707B45 /* DISOccupationPickerView.swift in Sources */,
+				4A9A01CF1FB14EC000707B45 /* String+Extension.swift in Sources */,
+				4A9A01FD1FB153CF00707B45 /* DISKaryokuHatsudenMainController.swift in Sources */,
+				4A9A01B81FB14EC000707B45 /* DISOccupationInfoCell.swift in Sources */,
+				4A9A01D01FB14EC000707B45 /* UIColor+Extension.swift in Sources */,
+				4A9A02011FB153CF00707B45 /* DISSuiryokuhatsudenMainController.swift in Sources */,
+				4A9A01B01FB14EC000707B45 /* DISKensaMainViewController.swift in Sources */,
+				4A9A01B11FB14EC000707B45 /* DISLoginController.swift in Sources */,
+				4A9A01AE1FB14EC000707B45 /* DISBaseController.swift in Sources */,
+				4A9A01B71FB14EC000707B45 /* DISKensaMainViewControllerCell.swift in Sources */,
+				4A9A01FB1FB153CF00707B45 /* DISDentoudenryokuMainController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A9A00BF1FB14E3600707B45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A9A00C81FB14E3600707B45 /* DISRailWayTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A9A00CA1FB14E3600707B45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A9A00D31FB14E3600707B45 /* DISRailWayUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4A9A00C51FB14E3600707B45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A9A00AE1FB14E3600707B45 /* DISRailWay */;
+			targetProxy = 4A9A00C41FB14E3600707B45 /* PBXContainerItemProxy */;
+		};
+		4A9A00D01FB14E3600707B45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A9A00AE1FB14E3600707B45 /* DISRailWay */;
+			targetProxy = 4A9A00CF1FB14E3600707B45 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4A9A00D51FB14E3600707B45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4A9A00D61FB14E3600707B45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4A9A00D81FB14E3600707B45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 992XXDZ6TE;
+				INFOPLIST_FILE = DISRailWay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.disol.DISRailWay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4A9A00D91FB14E3600707B45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 992XXDZ6TE;
+				INFOPLIST_FILE = DISRailWay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.disol.DISRailWay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4A9A00DB1FB14E3600707B45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DISRailWayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.disol.DISRailWayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DISRailWay.app/DISRailWay";
+			};
+			name = Debug;
+		};
+		4A9A00DC1FB14E3600707B45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DISRailWayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.disol.DISRailWayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DISRailWay.app/DISRailWay";
+			};
+			name = Release;
+		};
+		4A9A00DE1FB14E3600707B45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DISRailWayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.disol.DISRailWayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DISRailWay;
+			};
+			name = Debug;
+		};
+		4A9A00DF1FB14E3600707B45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DISRailWayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.disol.DISRailWayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DISRailWay;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4A9A00AA1FB14E3600707B45 /* Build configuration list for PBXProject "DISRailWay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A9A00D51FB14E3600707B45 /* Debug */,
+				4A9A00D61FB14E3600707B45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A9A00D71FB14E3600707B45 /* Build configuration list for PBXNativeTarget "DISRailWay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A9A00D81FB14E3600707B45 /* Debug */,
+				4A9A00D91FB14E3600707B45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A9A00DA1FB14E3600707B45 /* Build configuration list for PBXNativeTarget "DISRailWayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A9A00DB1FB14E3600707B45 /* Debug */,
+				4A9A00DC1FB14E3600707B45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A9A00DD1FB14E3600707B45 /* Build configuration list for PBXNativeTarget "DISRailWayUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A9A00DE1FB14E3600707B45 /* Debug */,
+				4A9A00DF1FB14E3600707B45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4A9A00A71FB14E3600707B45 /* Project object */;
+}
