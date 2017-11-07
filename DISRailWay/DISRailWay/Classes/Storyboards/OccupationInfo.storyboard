@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eEq-YG-5EO">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--基本情報入力-->
+        <scene sceneID="4Kj-4G-ITN">
+            <objects>
+                <viewController id="5Rs-pT-TMQ" customClass="DISOccupationInfoViewController" customModule="DISRailWay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gDc-xM-VuQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="b8d-0Z-Pvb">
+                                <rect key="frame" x="0.0" y="64" width="375" height="220"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="k6P-02-HVa"/>
+                                </constraints>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yeO-sE-658">
+                                <rect key="frame" x="0.0" y="304" width="375" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="FiZ-Ft-uqK"/>
+                                </constraints>
+                                <state key="normal" title="入力"/>
+                                <connections>
+                                    <action selector="OccupationInfoAction:" destination="5Rs-pT-TMQ" eventType="touchUpInside" id="qdi-m8-eHl"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nzc-kS-gHY">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sod-2k-hgB" customClass="DISOccupationPickerView" customModule="DISRailWay" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="283" width="335" height="300"/>
+                                        <userGuides>
+                                            <userLayoutGuide location="172" affinity="minY"/>
+                                        </userGuides>
+                                        <subviews>
+                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="EAC-ga-4zw">
+                                                <rect key="frame" x="0.0" y="9" width="335" height="216"/>
+                                                <date key="date" timeIntervalSinceReferenceDate="531216747.73381299">
+                                                    <!--2017-11-01 08:12:27 +0000-->
+                                                </date>
+                                            </datePicker>
+                                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DCv-I4-nrb">
+                                                <rect key="frame" x="0.0" y="9" width="335" height="216"/>
+                                            </pickerView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7HU-kl-9it">
+                                                <rect key="frame" x="281" y="250" width="46" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="46" id="k5X-4Y-4mI"/>
+                                                </constraints>
+                                                <state key="normal" title="登録"/>
+                                                <connections>
+                                                    <action selector="inputButtonClick:" destination="sod-2k-hgB" eventType="touchUpInside" id="iWi-tC-jsx"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rtg-y9-m5k">
+                                                <rect key="frame" x="180" y="250" width="93" height="30"/>
+                                                <state key="normal" title="キャンセル"/>
+                                                <connections>
+                                                    <action selector="cancelButtonClick:" destination="sod-2k-hgB" eventType="touchUpInside" id="222-4x-dGA"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="7HU-kl-9it" firstAttribute="trailing" secondItem="sod-2k-hgB" secondAttribute="trailingMargin" id="86d-EO-F0K"/>
+                                            <constraint firstItem="7HU-kl-9it" firstAttribute="top" secondItem="EAC-ga-4zw" secondAttribute="bottom" constant="25" id="8uo-mr-LNb"/>
+                                            <constraint firstItem="EAC-ga-4zw" firstAttribute="trailing" secondItem="USA-5t-99N" secondAttribute="trailing" id="HSa-O3-yd6"/>
+                                            <constraint firstAttribute="bottom" secondItem="7HU-kl-9it" secondAttribute="bottom" constant="20" symbolic="YES" id="KV4-n3-u5e"/>
+                                            <constraint firstItem="DCv-I4-nrb" firstAttribute="centerY" secondItem="EAC-ga-4zw" secondAttribute="centerY" id="N5r-6D-4RS"/>
+                                            <constraint firstItem="7HU-kl-9it" firstAttribute="leading" secondItem="Rtg-y9-m5k" secondAttribute="trailing" constant="8" symbolic="YES" id="VeH-M2-jtE"/>
+                                            <constraint firstItem="DCv-I4-nrb" firstAttribute="centerX" secondItem="EAC-ga-4zw" secondAttribute="centerX" id="cEu-Jy-9yi"/>
+                                            <constraint firstItem="Rtg-y9-m5k" firstAttribute="baseline" secondItem="7HU-kl-9it" secondAttribute="baseline" id="fLO-1D-eKs"/>
+                                            <constraint firstAttribute="height" constant="300" id="i80-N7-Fuq"/>
+                                            <constraint firstItem="DCv-I4-nrb" firstAttribute="height" secondItem="EAC-ga-4zw" secondAttribute="height" id="rM4-8G-v6v"/>
+                                            <constraint firstItem="Rtg-y9-m5k" firstAttribute="leading" secondItem="USA-5t-99N" secondAttribute="leading" constant="180" id="uEh-NA-zxd"/>
+                                            <constraint firstItem="EAC-ga-4zw" firstAttribute="leading" secondItem="USA-5t-99N" secondAttribute="leading" id="xR4-Lm-tlO"/>
+                                            <constraint firstItem="DCv-I4-nrb" firstAttribute="width" secondItem="EAC-ga-4zw" secondAttribute="width" id="zuG-fc-hK6"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="safeArea" id="USA-5t-99N"/>
+                                        <connections>
+                                            <outlet property="datePicker" destination="EAC-ga-4zw" id="hhB-Fl-WyY"/>
+                                            <outlet property="picker" destination="DCv-I4-nrb" id="Wos-1v-crf"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="sod-2k-hgB" firstAttribute="leading" secondItem="Nzc-kS-gHY" secondAttribute="leading" constant="20" id="1aL-R3-t22"/>
+                                    <constraint firstAttribute="bottom" secondItem="sod-2k-hgB" secondAttribute="bottom" constant="20" id="DQc-LA-REl"/>
+                                    <constraint firstAttribute="trailing" secondItem="sod-2k-hgB" secondAttribute="trailing" constant="20" id="S8Q-Xn-wZS"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JS8-xS-Wpn" firstAttribute="bottom" secondItem="Nzc-kS-gHY" secondAttribute="bottom" id="28U-RW-XTP"/>
+                            <constraint firstItem="b8d-0Z-Pvb" firstAttribute="top" secondItem="JS8-xS-Wpn" secondAttribute="top" id="84a-5P-Aqa"/>
+                            <constraint firstItem="yeO-sE-658" firstAttribute="top" secondItem="b8d-0Z-Pvb" secondAttribute="bottom" constant="20" id="9Sx-MM-Ds1"/>
+                            <constraint firstItem="Nzc-kS-gHY" firstAttribute="top" secondItem="JS8-xS-Wpn" secondAttribute="top" id="HUQ-OK-6Br"/>
+                            <constraint firstItem="JS8-xS-Wpn" firstAttribute="trailing" secondItem="Nzc-kS-gHY" secondAttribute="trailing" id="Ipd-37-QIL"/>
+                            <constraint firstItem="yeO-sE-658" firstAttribute="leading" secondItem="JS8-xS-Wpn" secondAttribute="leading" id="NX7-yT-lZy"/>
+                            <constraint firstItem="JS8-xS-Wpn" firstAttribute="trailing" secondItem="yeO-sE-658" secondAttribute="trailing" id="abP-GZ-meM"/>
+                            <constraint firstItem="b8d-0Z-Pvb" firstAttribute="leading" secondItem="JS8-xS-Wpn" secondAttribute="leading" id="gOQ-g4-tiT"/>
+                            <constraint firstItem="JS8-xS-Wpn" firstAttribute="trailing" secondItem="b8d-0Z-Pvb" secondAttribute="trailing" id="tRM-Nk-dCB"/>
+                            <constraint firstItem="Nzc-kS-gHY" firstAttribute="leading" secondItem="JS8-xS-Wpn" secondAttribute="leading" id="uhC-wt-aW1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JS8-xS-Wpn"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="基本情報入力" id="4B6-XV-QP8"/>
+                    <connections>
+                        <outlet property="occupationTableView" destination="b8d-0Z-Pvb" id="eXz-lF-yFe"/>
+                        <outlet property="pickerBackgroundView" destination="Nzc-kS-gHY" id="c8A-nx-p6L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vc0-oe-NHt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-327.19999999999999" y="-47.226386806596707"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yW0-Pp-VSW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eEq-YG-5EO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Eee-Rj-AXf">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="5Rs-pT-TMQ" kind="relationship" relationship="rootViewController" id="Wci-1h-fxw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JsP-0y-a7z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1153.5999999999999" y="-46.776611694152926"/>
+        </scene>
+    </scenes>
+</document>
